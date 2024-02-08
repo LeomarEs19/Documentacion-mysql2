@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <h1>Documentacion De La Api</h1> 
+   <hr>
+    <h3>Requerimiento 1 Documentacion Del ENDPOINT USUARIOS</h3>
+   <table>
+    <tr><td>NUMERO</td><td>1</td></tr>
+    <tr><td>NOMBRE SERVICIO</td><td>Listar Usuarios</td></tr>
+    <tr><td>URL</td><td>/Usuario/Listar</td></tr>
+    <tr><td>DESCRIPCION</td><td>Permite Listar Los Usuarios Resgistrados En La Base De Datos</td></tr>
+    <tr><td>VERBO HTTP</td><td>Get</td></tr>
+    <tr><td>HEADER</td><td>Null</td></tr>
+    <tr><td>USUARIO</td><td>Administrador</td></tr>
+    <tr><td>RESPUESTA JSON</td><td>
+
+        CORRECTO:
+        Status: 200
+        JSON{
+            "Mensaje": "Se Creo Correctamente El Usuario"
+        }
+
+        {
+            "idusuario": 95,
+            "nombres": "ssda",
+            "direccion": "dsas",
+            "telefono": "13332",
+            "correo": "23232",
+            "rol": "",
+            "password": null
+          }
+        
+        INCORRECTO: 
+        Status: 404
+        JSON{
+            "Mensaje": "No Se Pudo Crear El Usuario"
+        }
+
+        ERROR:
+        Status: 500
+        JSON{
+            "Mensaje": "error"
+        }
+
+
+    </td></tr>
+   </table>
+   
+</body>
+</html>

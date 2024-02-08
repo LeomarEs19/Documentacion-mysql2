@@ -1,0 +1,16 @@
+body{
+    background: rgb(209, 209, 209);
+}
+
+table{
+    border: 1px solid rgb(109, 109, 109);
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid rgb(143, 143, 143);
+}
+
+h1{
+    text-align: center;
+}
